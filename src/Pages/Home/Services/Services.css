@@ -1,0 +1,21 @@
+.services {
+    margin: 20px;
+}
+.services-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+
+/* responsive for small devices */
+@media only screen and (max-width: 800px) {
+    .services-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .services-container {
+        grid-template-columns: 1fr;
+    }
+}
